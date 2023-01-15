@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>codes.rafael.feed</groupId>
   <artifactId>feed</artifactId>
-  <version>0-SNAPSHOT</version>
+  <version>1.4</version>
   <packaging>pom</packaging>
   <name>Generic feed processing for Java</name>
   <description>This library implements persistent and consistent processing of feed data without making assumptions of a feed's structure or source. In this context a feed can represent any chain of data that can be implemented as the `FeedEndpoint` interface of the *feed-api* module.</description>
@@ -19,6 +19,7 @@
     <connection>scm:git:git://github.com/raphw/skatteprosessen-feed.git</connection>
     <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-feed.git</developerConnection>
     <url>http://github.com/raphw/skatteprosessen-feed/tree/master</url>
+    <tag>feed-1.4</tag>
   </scm>
   <developers>
     <developer>
@@ -157,7 +158,7 @@
     <profile>
       <id>kafka-docker</id>
       <properties>
-        <kafka-docker/>
+        <kafka-docker />
       </properties>
     </profile>
   </profiles>
