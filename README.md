@@ -9,10 +9,6 @@ This library implements persistent and consistent processing of feed data withou
 - Atom Hopper (http://atomhopper.org)
 - SQL tables using a column as sorting property
 - Kafka topics
-- Skatteetaten's Skattekiste format
-- Skatteetaten's Saksmappe format
-- Skatteetaten's AA-Register format
-- Skatteetaten's Partsregister v3 format
 - An in-memory feed implementation (for testing purposes)
 
 Using this library, feeds of any source can be iterated in either forwards (oldest to newest) or backwards (newest to oldest) direction. The library takes responsibility for reading a feed in the specified direction and to assure that entries are only read a single time while new data is added over time. If a feed is read forwards, new entries will simply be read in their incoming order. In backwards direction, new entries will be read in reverse until the last known entry is discovered. If an application fails during reading a feed, transactional support is offered for updating the feed reader's state and to resume reading a feed from the last known position. It is also possible to reprocess a feed if processing fails during reverse reading where any previously read entry is explicitly marked.
