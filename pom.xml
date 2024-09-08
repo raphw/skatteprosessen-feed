@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>codes.rafael.feed</groupId>
   <artifactId>feed</artifactId>
-  <version>1.5</version>
+  <version>1.6-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Generic feed processing for Java</name>
   <description>This library implements persistent and consistent processing of feed data without making assumptions of a feed's structure or source. In this context a feed can represent any chain of data that can be implemented as the `FeedEndpoint` interface of the *feed-api* module.</description>
